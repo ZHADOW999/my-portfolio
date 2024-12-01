@@ -72,9 +72,9 @@ const Home = () => {
 
 
             {/*                                    FEATURED PROJECT SECTION                              */}
-            <section id="work" className='w-[95%] sm:w-[90] m-auto'>
+            <section id="work" className='w-[95%] sm:w-[90] m-auto mt-5'>
                 <h2 className='text-[76px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1'>featured projects</h2>
-                <p className='text-2 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+                <p className='text-2 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 w-[40%]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
                 <div className='flex flex-col gap-10'>
                     {projects.map((project, index) => (
                         <ProjectCard key={index} project={project} />

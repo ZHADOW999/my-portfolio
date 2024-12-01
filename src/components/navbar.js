@@ -9,8 +9,8 @@ const NavBar = () => {
     };
 
     return ( 
-        <header className="dark:bg-dark-bg bg-Light-bg mt-2">
-            <nav className=" relative flex justify-between items-center dark:text-dark-theme-textColor-2 text-light-theme-textColor-2">
+        <header className="dark:bg-dark-bg bg-Light-bg mt-5">
+            <nav className="w-[95%] sm:w-[90] m-auto relative flex justify-between items-center dark:text-dark-theme-textColor-2 text-light-theme-textColor-2">
                 <p className=" uppercase font-main-header-font text-[28px]">Babalola Victor</p>
                 <div
                     className={` sm:hidden ham-menu z-[50] ${isActive ? "active" : ""}`}
