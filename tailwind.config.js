@@ -25,7 +25,8 @@ module.exports = {
         'main-header-font':'main-header-font',
         'small-text-font':'small-text-font',
         'sub-header-text-font':'sub-header-text-font',
-        "button-font":"button-font"
+        "button-font":"button-font",
+        "projetInfo-font":"projetInfo-font"
       },
       
       fontSize:{

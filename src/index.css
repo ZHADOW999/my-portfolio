@@ -21,6 +21,10 @@
   font-family: button-font;
   src: url(./fonts/Manrope/static/Manrope-Bold.ttf);
 }
+@font-face {
+  font-family: projetInfo-font;
+  src: url(./fonts/Manrope/static/Manrope-SemiBold.ttf);
+}
 
 @layer {
   .ham-menu {
@@ -53,8 +57,12 @@
   }
 
   body{
-    @apply overflow-x-hidden dark:bg-dark-bg bg-Light-bg w-[95%] sm:w-[90] m-auto;
+    @apply overflow-x-hidden dark:bg-dark-bg bg-Light-bg  ;
   }
+}
+html{
+  
+  scroll-behavior: smooth;
 }
 body{
   margin: auto;
