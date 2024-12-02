@@ -50,8 +50,8 @@ const Home = () => {
         {/*                                               HERO SECTION                              */}
             <section id="" className='pb-20 mt-10 space-y-10 md:flex md:items-center md:justify-between md:space-y-0  w-[95%] sm:w-[90] m-auto'>
                 <article>
-                    <h1 className="leading-none text-[57px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 md:text-[100px]  lg:w-[77%]">hi, i am Babalola victor</h1>
-                    <p className="text-2 font-small-text-font w-[100%] dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 sm:w-[60%] lg:w-[80%]">A passionate Nigerian front-end developer transforming ideas into sleek, functional, and user-friendly websites.</p>
+                    <h1 className="leading-none text-[57px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 md:text-[100px]   2xl:w-[77%]">hi, i am Babalola victor</h1>
+                    <p className="3xl:text-3 text-2 font-small-text-font w-[100%] dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 sm:w-[60%] lg:w-[80%]">A passionate Nigerian front-end developer transforming ideas into sleek, functional, and user-friendly websites.</p>
                    <div className='flex items-center gap-4 mt-5'>
                         <button className='pl-[16px] pr-[5px] font-button-font uppercase flex items-center gap-[12px] justify-center py-[3px] rounded-3xl dark:bg-dark-mode-accent text-[14px] bg-light-mode-accent'>
                             contact me <span><FontAwesomeIcon icon={faArrowRight} className='-rotate-45 text-white p-2 bg-dark-bg rounded-full' /></span>
@@ -72,10 +72,10 @@ const Home = () => {
 
 
             {/*                                    FEATURED PROJECT SECTION                              */}
-            <section id="work" className='w-[95%] sm:w-[90] m-auto mt-5'>
+            <section id="work" className='w-[95%] sm:w-[90] m-auto mt-5 pb-20'>
                 <h2 className='text-[76px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1'>featured projects</h2>
                 <p className='text-2 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 w-[40%]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
-                <div className='flex flex-col gap-10'>
+                <div className='flex flex-col '>
                     {projects.map((project, index) => (
                         <ProjectCard key={index} project={project} />
                     ))}
