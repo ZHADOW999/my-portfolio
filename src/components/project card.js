@@ -8,9 +8,9 @@ const ProjectCard = ({project}) => {
     return ( 
         <div className='flex flex-col md:flex-row md:items-center md:justify-center  gap-10 mt-20 '> 
         
-            <div className="dark:border-none bg-none border border-dark-bg md:w-[50%] md:py-14  md:px-7 dark:bg-dark-theme-element-color py-14  px-7 h-auto  rounded-lg relative sm:py-24 sm:px-12 lg:py-24 lg:px-12 ">
-            <p className="absolute top-3 left-1 h-8 grid place-items-center rounded-[30px] text-white w-24 bg-dark-bg">{project.type}</p>
-                <img src={project.image} className='w-full rounded-lg dark:border-none border border-dark-bg' alt="project" /></div>
+            <div className="border-dark-bg dark:border-none bg-none border   md:w-[50%] bg-white md:py-14  md:px-7 dark:bg-dark-theme-element-color py-14  px-7 h-auto  rounded-lg relative sm:py-24 sm:px-12 lg:py-24 lg:px-12 ">
+            <p className="absolute top-3 text-1 sm:text-2 left-1 sm:h-8 grid place-items-center rounded-[30px] text-white sm:w-24 h-6 w-20 bg-dark-bg">{project.type}</p>
+                <img src={project.image} className='w-full rounded-lg dark:border-none border ' alt="project" /></div>
             <div className='md:w-1/2'>
                 <h3 className= "mb-5 lg:text-[32px] text-[24px] font-sub-header-text-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1">{project.title}</h3>
                 <p className="3xl:text-3 font-small-text-font dark:text-dark-theme-textColor-2  text-light-theme-textColor-2">{project.description}</p>
