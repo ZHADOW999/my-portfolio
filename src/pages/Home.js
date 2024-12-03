@@ -98,7 +98,7 @@ const Home = () => {
                     about me
                 </h2>
                 <article className='space-y-5 w-full md:w-[60%]'>
-                    <h3 className=' lg:text-[32px] text-[24px] font-sub-header-text-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1'>I am a frontend developer based in Nigeria, currently pursuing a degree in Computer Science.</h3>
+                    <h3 className='hidden sm:block sm:text-[32px] text-[24px] font-sub-header-text-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1'>I am a frontend developer based in Nigeria, currently pursuing a degree in Computer Science.</h3>
 
                     <p className='font-small-text-font text-2 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 ' >As a frontend developer currently pursuing a degree, I specialize in building responsive, user-centered web applications. My experience includes creating personal projects using HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS. I focus on crafting scalable components, optimizing performance, and delivering intuitive user experiences. I am passionate about leveraging modern web technologies and continuously expanding my skill set to create visually appealing, functional web solutions.</p>
                     <button className="font-button-font relative dark:text-dark-mode-accent text-light-mode-accent text-1.5 uppercase hover:after:w-full after:content-[''] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:h-0.5 after:block after:-bottom-1 after:absolute after:bg-light-mode-accent dark:after:bg-dark-mode-accent"><Link className='' to="/about" target="_blank" rel="noreferrer">more about me
@@ -109,7 +109,7 @@ const Home = () => {
             <div className='h-[1px] w-full bg-light-theme-textColor-2' ></div>
 
             {/*                                  CONTACT ME PAGE                                */}
-            <section id="contact" className='3xl:w-[90%] w-[95%] sm:w-[90] m-auto my-10 pb-20'>
+            <section id="contact" className='3xl:w-[90%] w-[95%] sm:w-[90] m-auto my-10 '>
                 <Contact />
             </section>
 
