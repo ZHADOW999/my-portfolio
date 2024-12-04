@@ -9,6 +9,7 @@ import project1 from "../images/project1.jpg"
 import project2 from "../images/project2.jpg"
 import project3 from "../images/project3.jpg"
 import Contact from '../components/contact';
+import { downloadFile } from '../components/downloadResme';
 //import React, { useRef } from 'react';
 
 
@@ -49,6 +50,11 @@ const Home = () => {
         }
     ];
 
+    const handleDownloadResume = async (e)=>{
+        e.preventDefault()
+        downloadFile('/resume.pdf','resume.pdf')
+    }
+
     
 
     return (
@@ -59,8 +65,8 @@ const Home = () => {
                     <h1 className="leading-none text-[57px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 md:text-[100px]   2xl:w-[77%]">hi, i am Babalola victor.</h1>
                     <p className="3xl:text-3 text-2 font-small-text-font w-[100%] dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 sm:w-[60%] lg:w-[80%]">A passionate Nigerian front-end developer transforming ideas into sleek, functional, and user-friendly websites.</p>
                     <div className='flex items-center gap-4 mt-5'>
-                        <button className='hover:scale-110 transition-all duration-300 ease pl-[16px] pr-[5px] font-button-font uppercase flex items-center gap-[12px] justify-center py-[3px] rounded-3xl dark:bg-dark-mode-accent text-[14px] bg-light-mode-accent'>
-                            contact me <span><FontAwesomeIcon icon={faArrowRight} className='-rotate-45 text-white p-2 bg-dark-bg rounded-full' /></span>
+                        <button onClick={handleDownloadResume} className='hover:scale-110 transition-all duration-300 ease pl-[16px] pr-[5px] font-button-font uppercase flex items-center gap-[12px] justify-center py-[3px] rounded-3xl dark:bg-dark-mode-accent text-[14px] bg-light-mode-accent'>
+                            download resume <span><FontAwesomeIcon icon={faArrowRight} className='-rotate-45 text-white p-2 bg-dark-bg rounded-full' /></span>
                         </button>
                         <Link to="https://linkedin.com/in/victor-babalola-875a1030b" target='_blank'>
                             <FontAwesomeIcon icon={faLinkedinIn} className='hover:scale-110 transition-all duration-300 ease  text-3 bg-light-theme-textColor-2 p-3 rounded-full dark:text-dark-mode-accent text-light-mode-accent' />

@@ -3,6 +3,7 @@ import { faLinkedinIn, faGithub, faXTwitter, faInstagram } from "@fortawesome/fr
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { downloadFile } from "./downloadResme";
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xdkopwdz");
@@ -22,24 +23,8 @@ const Contact = () => {
 
     const handleDownloadResume = async (e) => {
         e.preventDefault(); // Prevent the default anchor behavior
+        downloadFile('/resume.pdf','resume.pdf')
         
-        try {
-            const response = await fetch('/resume.pdf');
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'resume.pdf';
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        } catch (error) {
-            console.error('Error downloading the file:', error);
-        }
     };
     return (
         <div className="flex flex-col md:flex-row md:items-start  md:justify-between  my-20 space-y-10 md:space-y-0">
