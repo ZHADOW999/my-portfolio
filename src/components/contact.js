@@ -39,22 +39,22 @@ const Contact = () => {
                     </p>
                     <p className='mt-1 font-small-text-font text-2 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2'>
                         For more info, here's my
-                        <a href="/resume.pdf" onClick={handleDownloadResume} className="ml-1 font-small-text-font relative dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 text-2 after:left-0 hover:after:w-full after:content-[''] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:h-0.5 after:block after:-bottom-1 after:absolute after:bg-light-mode-accent dark:after:bg-dark-mode-accent">
+                        <a aria-label="Download my resume" href="/resume.pdf" onClick={handleDownloadResume} className="ml-1 font-small-text-font relative dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 text-2 after:left-0 hover:after:w-full after:content-[''] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:h-0.5 after:block after:-bottom-1 after:absolute after:bg-light-mode-accent dark:after:bg-dark-mode-accent">
                             resume
                         </a>
                     </p>
                     <div className='flex items-center gap-5 mt-10'>
-                        <Link to="https://linkedin.com/in/victor-babalola-875a1030b" target='_blank'>
+                        <Link aria-label='Link to my linkedin page' to="https://linkedin.com/in/victor-babalola-875a1030b" target='_blank'>
                             <FontAwesomeIcon icon={faLinkedinIn} className='hover:scale-125 transition-all duration-400 ease  text-4  dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
-                        <Link to="https://github.com/ZHADOW999" target='_blank'>
+                        <Link aria-label='Link to my github page' to="https://github.com/ZHADOW999" target='_blank'>
                             <FontAwesomeIcon icon={faGithub} className='hover:scale-125 transition-all duration-400 ease  text-4 dark:text-dark-mode-accent text-light-mode-accent' />
 
                         </Link>
-                        <Link to="https://x.com/victorBabalol16" target='_blank'>
+                        <Link aria-label='Link to my twitter page' to="https://x.com/victorBabalol16" target='_blank'>
                             <FontAwesomeIcon icon={faXTwitter} className='hover:scale-125 transition-all duration-400 ease  text-4  dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
-                        <Link to="https://www.instagram.com/zhadow_999/" target='_blank'>
+                        <Link aria-label='Link to my Instagram page' to="https://www.instagram.com/zhadow_999/" target='_blank'>
                             <FontAwesomeIcon icon={faInstagram} className='hover:scale-125 transition-all duration-400 ease  text-4  dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
                     </div>
