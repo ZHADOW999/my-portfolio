@@ -58,7 +58,7 @@ const Home = () => {
     
 
     return (
-        <>
+        <main>
             {/*                                               HERO SECTION                              */}
             <section id="" className='pb-20 mt-10 space-y-10 md:flex md:items-center md:justify-between md:space-y-0  w-[95%] sm:w-[90] 3xl:w-[90%] m-auto'>
                 <article>
@@ -71,8 +71,8 @@ const Home = () => {
                         <Link to="https://linkedin.com/in/victor-babalola-875a1030b" aria-label='Link to my linkedin page' target='_blank'>
                             <FontAwesomeIcon icon={faLinkedinIn} className='hover:scale-110 transition-all duration-300 ease  text-3 bg-light-theme-textColor-2 p-3 rounded-full dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
-                        <Link to="https://github.com/ZHADOW999" target='_blank'>
-                            <FontAwesomeIcon aria-label='Link to my github page'icon={faGithub} className= 'hover:scale-110 transition-all duration-300 ease text-3 bg-light-theme-textColor-2 p-3 rounded-full dark:text-dark-mode-accent text-light-mode-accent' />
+                        <Link aria-label='Link to my github page' to="https://github.com/ZHADOW999" target='_blank'>
+                            <FontAwesomeIcon icon={faGithub} className= 'hover:scale-110 transition-all duration-300 ease text-3 bg-light-theme-textColor-2 p-3 rounded-full dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
                     </div>
                 </article>
@@ -119,7 +119,7 @@ const Home = () => {
                 <Contact />
             </section>
 
-        </>);
+        </main>);
 }
 
 export default Home;
