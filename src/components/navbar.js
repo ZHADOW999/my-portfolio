@@ -26,9 +26,12 @@ const NavBar = () => {
                 </div>
               <div className={` nav  flex-col justify-between flex items-center sm:w-[58%] px-8 -right-[0%] border-[1px] dark:border-dark-theme-textColor-2 border-light-theme-textColor-2 transition-all duration-300 ease-in-out w-[25%] dark:bg-dark-bg bg-Light-bg absolute -bottom-[160px] sm:relative sm:flex-row sm:translate-x-[0%] sm:bottom-auto sm:right-auto opacity-100 z-50 sm:border-none sm:bg-none sm:dark:bg-none  ${isActive ? "translate-x-0" : "translate-x-[130%]"}`}>
                     <ul className="sm:flex-row justify-center gap-5 items-center flex flex-col font-small-text-font ">
-                        <a className="capitalize hover:dark:text-dark-theme-textColor-1 hover:text-light-theme-textColor-1 transition-all duration-300 ease-in" href="#work" >work</a>
-                        <a className="capitalize hover:dark:text-dark-theme-textColor-1 hover:text-light-theme-textColor-1 transition-all duration-300 ease-in" href="#about">about</a>
-                        <a className="capitalize hover:dark:text-dark-theme-textColor-1 hover:text-light-theme-textColor-1 transition-all duration-300 ease-in" href="#contact">contact</a>
+                        <li><a className="capitalize hover:dark:text-dark-theme-textColor-1 hover:text-light-theme-textColor-1 transition-all duration-300 ease-in" href="#work" >work</a></li>
+                        <li>
+                            <a className="capitalize hover:dark:text-dark-theme-textColor-1 hover:text-light-theme-textColor-1 transition-all duration-300 ease-in" href="#about">about</a>
+    
+                        </li>             
+                        <li><a className="capitalize hover:dark:text-dark-theme-textColor-1 hover:text-light-theme-textColor-1 transition-all duration-300 ease-in" href="#contact">contact</a></li>
                     </ul>
                     <DarkThemeToggle/>
               </div>
