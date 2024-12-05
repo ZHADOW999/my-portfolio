@@ -51,10 +51,10 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faGithub} className='hover:scale-125 transition-all duration-400 ease  text-4 dark:text-dark-mode-accent text-light-mode-accent' />
 
                         </Link>
-                        <Link to="https://x.com/babalolav9" target='_blank'>
+                        <Link to="https://x.com/victorBabalol16" target='_blank'>
                             <FontAwesomeIcon icon={faXTwitter} className='hover:scale-125 transition-all duration-400 ease  text-4  dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
-                        <Link to="https://instagram.com/babalolav9" target='_blank'>
+                        <Link to="https://www.instagram.com/zhadow_999/" target='_blank'>
                             <FontAwesomeIcon icon={faInstagram} className='hover:scale-125 transition-all duration-400 ease  text-4  dark:text-dark-mode-accent text-light-mode-accent' />
                         </Link>
                     </div>
