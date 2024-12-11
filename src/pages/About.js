@@ -25,7 +25,9 @@ const About = () => {
     }
 
     return ( <main>
+        
         <section id="about" className='mt-20 mb-10 justify-between 3xl:w-[90%] w-[95%] m-auto sm:w-[90] flex flex-col md:flex-row '>
+            
                 <h2 className='leading-none text-[57px]  sm:text-[101px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1'>
                     about me
                 </h2>

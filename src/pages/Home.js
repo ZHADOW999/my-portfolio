@@ -24,7 +24,7 @@ const Home = () => {
             image: project1,
             title: "Space Tourism Experience",
             description: "A modern and responsive React website showcasing space destinations, crew members, and advanced technology. The site features interactive tabs and is styled with Tailwind CSS to ensure a seamless user experience across devices.",
-            year: "2023",
+            year: "2024",
             role: "Front-end Developer",
             live: "https://space-tourism-website-main-react-alsg.vercel.app",
             github: "https://github.com/ZHADOW999/space-tourism-website-main-react"
