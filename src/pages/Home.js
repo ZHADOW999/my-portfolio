@@ -8,6 +8,7 @@ import ProjectCard from '../components/project card';
 import project1 from "../images/project1.jpg"
 import project2 from "../images/project2.jpg"
 import project3 from "../images/project3.jpg"
+import project4 from "../images/project4.jpg"
 import Contact from '../components/contact';
 import { downloadFile } from '../components/downloadResme';
 //import React, { useRef } from 'react';
@@ -36,7 +37,7 @@ const Home = () => {
             year: "2023",
             role: "Front-end Developer",
             live: "https://zhadow999.github.io/todo-web-app",
-            github: "https://github.com/ZHADOW999/todo-web-app2"
+            github: "https://github.com/ZHADOW999/todo-web-app"
         },
         {
             type: "challenge",
@@ -47,6 +48,16 @@ const Home = () => {
             role: "Front-end Developer",
             live: "https://zhadow999.github.io/Bookmark-Landing-Page",
             github: "https://github.com/ZHADOW999/Bookmark-Landing-Page"
+        },
+        {
+            type:"challenge",
+            image: project4,
+            title: "WorldNavigator",
+            description: "WorldNavigator is an interactive web application built with React that allows users to explore detailed information about countries worldwide using the RESTful Country API. Users can search for countries, view their profiles, and discover neighboring nations, all within a responsive and user-friendly interface. This app provides a seamless experience for geography enthusiasts and travelers alike.",
+            year: "2024",
+            role: "Front-end Developer",
+            live: "https://world-navigator-jet.vercel.app/",
+            github: "https://github.com/ZHADOW999/rest-countries-api-with-color-theme-switcher-master"
         }
     ];
 
@@ -62,7 +73,7 @@ const Home = () => {
             {/*                                               HERO SECTION                              */}
             <section id="" className='pb-20 mt-10 space-y-10 md:flex md:items-center md:justify-between md:space-y-0  w-[95%] sm:w-[90] 3xl:w-[90%] m-auto'>
                 <article>
-                    <h1 className="leading-none text-[57px] uppercase font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 md:text-[100px]   2xl:w-[77%]">hi, i am Babalola victor.</h1>
+                    <h1 className="leading-none text-[57px] uppercase  font-main-header-font dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 md:text-[100px]   2xl:w-[77%]">hi, i am Babalola victor.</h1>
                     <p className="3xl:text-3 text-2 font-small-text-font w-[100%] dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 sm:w-[60%] lg:w-[80%]">A passionate Nigerian front-end developer transforming ideas into sleek, functional, and user-friendly websites.</p>
                     <div className='flex items-center gap-4 mt-5'>
                         <button aria-label='download my resume' onClick={handleDownloadResume} className='hover:scale-110 transition-all duration-300 ease pl-[16px] pr-[5px] font-button-font uppercase flex items-center gap-[12px] justify-center py-[3px] rounded-3xl dark:bg-dark-mode-accent text-[14px] bg-light-mode-accent'>
