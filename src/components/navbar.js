@@ -11,7 +11,7 @@ const NavBar = () => {
     const handleToggleScroll = useCallback( () => {
         if (typeof window !== "undefined") {
             const currentScrollY = window.scrollY;
-            setShowNavBar(currentScrollY < lastScrollY || currentScrollY < 100); // Show navbar when scrolling up or at the top
+            setShowNavBar(currentScrollY < lastScrollY || currentScrollY < 500); // Show navbar when scrolling up or at the top
             setLastScrollY(currentScrollY); // Update last scroll position
         }
     },[lastScrollY])
@@ -30,8 +30,8 @@ const NavBar = () => {
     
 
     return ( 
-        <header className={`z-50 dark:bg-dark-bg bg-Light-bg py-5  fixed top-0 left-0 right-0 ${showNavBar ? 'translate-y-0' : '-translate-y-[150%]'}`}>
-            <nav className="  3xl:w-[90%] w-[95%] sm:w-[90] m-auto flex transition-transform duration-300 z-50 justify-between items-center dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 ">
+        <header className={`transition-transform duration-300 ease-in-out z-50 dark:bg-dark-bg bg-Light-bg py-5  fixed top-0 left-0 right-0 ${showNavBar ? 'translate-y-0' : '-translate-y-[150%]'}`}>
+            <nav className="  3xl:w-[90%] w-[95%] sm:w-[90] m-auto flex  z-50 justify-between items-center dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 ">
                 <p className=" uppercase font-main-header-font text-[28px]">Babalola Victor</p>
                 <div
                     className={` sm:hidden ham-menu z-[50] ${isActive ? "active" : ""}`}

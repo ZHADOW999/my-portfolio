@@ -69,7 +69,7 @@ const Home = () => {
     
 
     return (
-        <main>
+        <main className='mt-32'>
             {/*                                               HERO SECTION                              */}
             <section id="" className='pb-20 mt-10 space-y-10 md:flex md:items-center md:justify-between md:space-y-0  w-[95%] sm:w-[90] 3xl:w-[90%] m-auto'>
                 <article>
