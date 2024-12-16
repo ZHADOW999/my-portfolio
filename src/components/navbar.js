@@ -1,17 +1,37 @@
 import { DarkThemeToggle } from "flowbite-react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect,useCallback } from "react";
 import "../index.css"
 const NavBar = () => {
     const [isActive, setIsActive]= useState(false)
+    const [showNavBar,setShowNavBar] = useState(false);
+    const [lastScrollY,setLastScrollY] = useState(false);
+
+
+    const handleToggleScroll = useCallback( () => {
+        if (typeof window !== "undefined") {
+            const currentScrollY = window.scrollY;
+            setShowNavBar(currentScrollY < lastScrollY || currentScrollY < 100); // Show navbar when scrolling up or at the top
+            setLastScrollY(currentScrollY); // Update last scroll position
+        }
+    },[lastScrollY])
+
+    useEffect(() => {
+        window.addEventListener("scroll",handleToggleScroll);
+        return ()=>{
+            window.removeEventListener("scroll",handleToggleScroll);
+        }
+    },[lastScrollY,handleToggleScroll])
+
+
     const handleToggle = () => {
         setIsActive((prevState) => !prevState);
     };
     
 
     return ( 
-        <header className=" dark:bg-dark-bg bg-Light-bg mt-5">
-            <nav className=" 3xl:w-[90%] w-[95%] sm:w-[90] m-auto relative flex justify-between items-center dark:text-dark-theme-textColor-2 text-light-theme-textColor-2">
+        <header className={`z-50 dark:bg-dark-bg bg-Light-bg py-5  fixed top-0 left-0 right-0 ${showNavBar ? 'translate-y-0' : '-translate-y-[150%]'}`}>
+            <nav className="  3xl:w-[90%] w-[95%] sm:w-[90] m-auto flex transition-transform duration-300 z-50 justify-between items-center dark:text-dark-theme-textColor-2 text-light-theme-textColor-2 ">
                 <p className=" uppercase font-main-header-font text-[28px]">Babalola Victor</p>
                 <div
                     className={` sm:hidden ham-menu z-[50] ${isActive ? "active" : ""}`}
