@@ -16,6 +16,7 @@ const About = () => {
         {skills: 'react'},
         {skills: 'tailwindcss'},
         {skills: 'figma'},
+        {skills: 'typescript'},
         
     ]
 
