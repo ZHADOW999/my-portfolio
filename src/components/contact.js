@@ -12,6 +12,9 @@ const Contact = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
+
+    
+
     useEffect(() => {
         if (state.succeeded) {
             setName('');
@@ -68,28 +71,36 @@ const Contact = () => {
                 <form className="" onSubmit={handleSubmit}>
                     <div className="flex flex-col gap-5">
                         <label className="font-sub-header-text-font text-1 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2" htmlFor="name">Name</label>
-                        <input className="focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                        <input className="focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" type="text" name="name" 
+                        required
+                        id="name" value={name} onChange={(e) => setName(e.target.value)} />
                         <ValidationError
                             prefix="Name"
                             field="name"
                             errors={state.errors}
                         />
                         <label className="font-sub-header-text-font text-1 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2" htmlFor="email">Email</label>
-                        <input className="focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input className="focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" type="email" 
+                        required
+                        name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <ValidationError
                             prefix="Email"
                             field="email"
                             errors={state.errors}
                         />
                         <label className="font-sub-header-text-font text-1 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2" htmlFor="subject">Subject</label>
-                        <input className="focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" type="text" name="subject" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
+                        <input className="focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" type="text" 
+                        required
+                        name="subject" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
                         <ValidationError
                             prefix="Subject"
                             field="subject"
                             errors={state.errors}
                         />
                         <label className="font-sub-header-text-font text-1 dark:text-dark-theme-textColor-2 text-light-theme-textColor-2" htmlFor="message">Message</label>
-                        <textarea className="h-36 focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                        <textarea className="h-36 focus:ring-0 dark:bg-dark-theme-element-color focus:border-light-theme-textColor-1 outline-none right-0 dark:focus:border-dark-theme-textColor-2 rounded-md border-0 focus:border-[1px] dark:text-dark-theme-textColor-1 text-light-theme-textColor-1 p-4 indent-2 transition-all duration-100 ease-in-out" name="message" 
+                        required
+                        id="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                     </div>
                     <button disabled={state.submitting} className=" mt-5 bg-light-mode-accent dark:bg-dark-mode-accent text-light-dark-textColor-1 font-button-font dark:text-light-theme-textColor-1 py-3 px-5 hover:scale-110 transition-all duration-300 ease-in-out rounded-3xl" type="submit">Submit</button>
                 </form>
