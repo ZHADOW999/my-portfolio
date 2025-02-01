@@ -5,12 +5,10 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import image from "../images/profile-image.png"
 import { Link } from 'react-router-dom';
 import ProjectCard from '../components/project card';
-import project1 from "../images/project1.jpg"
-import project2 from "../images/project2.jpg"
-import project3 from "../images/project3.jpg"
-import project4 from "../images/project4.jpg"
+
 import Contact from '../components/contact';
 import { downloadFile } from '../components/downloadResme';
+import { projects } from '../utilities/projects';
 //import React, { useRef } from 'react';
 
 
@@ -18,49 +16,6 @@ const Home = () => {
 
 
     // Define an array of project objects
-    const projects = [
-        {
-            type: "challenge",
-            image: project1,
-            title: "Space Tourism Experience",
-            description: "A modern and responsive React website showcasing space destinations, crew members, and advanced technology. The site features interactive tabs and is styled with Tailwind CSS to ensure a seamless user experience across devices.",
-            year: "2024",
-            role: "Front-end Developer",
-            live: "https://space-tourism-website-main-react-alsg.vercel.app",
-            github: "https://github.com/ZHADOW999/space-tourism-website-main-react"
-        },
-        {
-            type: "challenge",
-            image: project2,
-            title: "Todo List with Theme Switcher",
-            description: "A responsive and dynamic to-do list web app built with JavaScript and Tailwind CSS. It features a sleek theme switcher for a personalized user experience and local storage integration to save tasks for future sessions.",
-            year: "2023",
-            role: "Front-end Developer",
-            live: "https://zhadow999.github.io/todo-web-app",
-            github: "https://github.com/ZHADOW999/todo-web-app"
-        },
-        {
-            type: "challenge",
-            image: project3,
-            title: " Bookmark Manager Landing Page",
-            description: "A modern and clean landing page design for a bookmark manager application. Featuring a user-friendly layout, it highlights core functionalities such as simple bookmarking, speedy searching, and easy sharing. Includes extension download options, a FAQ section, and a newsletter subscription form to engage users.",
-            year: "2023",
-            role: "Front-end Developer",
-            live: "https://zhadow999.github.io/Bookmark-Landing-Page",
-            github: "https://github.com/ZHADOW999/Bookmark-Landing-Page"
-        },
-        {
-            type:"challenge",
-            image: project4,
-            title: "WorldNavigator",
-            description: "WorldNavigator is an interactive web application built with React that allows users to explore detailed information about countries worldwide using the RESTful Country API. Users can search for countries, view their profiles, and discover neighboring nations, all within a responsive and user-friendly interface. This app provides a seamless experience for geography enthusiasts and travelers alike.",
-            year: "2024",
-            role: "Front-end Developer",
-            live: "https://world-navigator-jet.vercel.app/",
-            github: "https://github.com/ZHADOW999/rest-countries-api-with-color-theme-switcher-master"
-        }
-    ];
-
     const handleDownloadResume = async (e)=>{
         e.preventDefault()
         downloadFile('/resume.pdf','resume.pdf')
