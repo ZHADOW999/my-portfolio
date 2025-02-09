@@ -11,7 +11,7 @@ export const projects = [
         description:"A modern e-commerce product showcase built with Next.js, Tailwind CSS, and shadcn/ui. It features category-based browsing, a search function, and a clean, responsive UI. Designed for a small-scale business, this project focuses on simplicity, performance, and user experience.",
         role:"Front-end Developer",
         year:"2025",
-        live:"https://essential-labs.vercel.app/",
+        live:"https://www.essentiallabinc.com/",
     },
     {
         type: "Challenge",
