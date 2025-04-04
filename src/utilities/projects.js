@@ -2,6 +2,7 @@ import project1 from "../images/project1.jpg"
 import project3 from "../images/project3.jpg"
 import project4 from "../images/project4.jpg"
 import project5 from "../images/project5.png"
+import project6 from "../images/project6.png"
 
 export const projects = [
     {
@@ -12,6 +13,16 @@ export const projects = [
         role:"Front-end Developer",
         year:"2025",
         live:"https://www.essentiallabinc.com/",
+    },
+    {
+        type: "Challenge",
+        image: project6,
+        title: "Title: YC Directory – Startup Pitch & Networking Platform",
+        description: "YC Directory is an interactive web platform that connects entrepreneurs, investors, and collaborators through dynamic startup pitches and virtual competitions. Users can submit their ideas, vote on innovative projects, and engage with a vibrant community spanning various sectors, from technology to film.",
+        year: "2024",
+        role: "Front-end Developer",
+        live: "https://yc-directiory.vercel.app/",
+        github: "https://github.com/ZHADOW999/YC_Directiory"
     },
     {
         type: "Challenge",

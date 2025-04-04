@@ -8,13 +8,15 @@ import Contact from '../components/contact';
 
 const About = () => {
     const skills=[
-        {skills: 'html'},
-        {skills: 'css'},
+        {skills: 'html5'},
+        {skills: 'css3'},
         {skills: 'javascript'},
         {skills: 'accessibility'},
         {skills: 'git'},
         {skills: 'react'},
+        {skills:'react native'},
         {skills: 'tailwindcss'},
+        {skills: 'nextjs'},
         {skills: 'figma'},
         {skills: 'typescript'},
         {skills: 'responsive design'},
