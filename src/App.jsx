@@ -12,7 +12,7 @@ const App = () => {
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/About" element={<Suspense fallback={<div className="w-[80%] m-auto loader flex items-center justify-center "></div>}><About/></Suspense>}/>
+          <Route path="/About" element={<Suspense fallback={<div className="flex-1 h-screen justify-center flex items-center"><div className="w-[80%] m-auto loader  "></div></div>}><About/></Suspense>}/>
         </Routes>
       </BrowserRouter>
     );

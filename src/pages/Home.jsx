@@ -3,17 +3,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import image from "../images/profile-image.png"
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ProjectCard from '../components/project card';
 
 import Contact from '../components/contact';
 import { downloadFile } from '../components/downloadResme';
 import { projects } from '../utilities/projects';
+import { useEffect } from 'react';
 //import React, { useRef } from 'react';
 
 
 const Home = () => {
+    const location = useLocation();
 
+    useEffect(() => {
+        // Check if we have a section to scroll to
+        if (location.state?.scrollTo) {
+            const element = document.getElementById(location.state.scrollTo);
+            if (element) {
+                // Add a small delay to ensure the page is fully loaded
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+            // Clear the state to prevent scrolling on subsequent renders
+            window.history.replaceState({}, document.title);
+        }
+    }, [location]);
 
     // Define an array of project objects
     const handleDownloadResume = async (e)=>{
