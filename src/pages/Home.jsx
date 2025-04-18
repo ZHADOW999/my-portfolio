@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import image from "../images/profile-image.png"
+import image from "../images/profile-image-2.jpg"
 import { Link, useLocation } from 'react-router-dom';
 import ProjectCard from '../components/project card';
 
@@ -58,7 +58,7 @@ const Home = () => {
                         </Link>
                     </div>
                 </article>
-                <div className="w-full h-full sm:w-[100%]  sm:h-[auto] md:w-[500px] md:h-[auto]"><img src={image} className='w-full h-full ' alt="my profile" /></div>
+                <div className="w-full h-full sm:w-[100%]  sm:h-[auto] md:w-[500px] md:h-[auto]"><img src={image} className='w-full h-full rounded-3xl' alt="my profile" /></div>
             </section>
 
 
